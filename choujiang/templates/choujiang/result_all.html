@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="backgroundstyle" href="{%  static 'choujiang/4.png' %}">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询抽奖结果</title>
+</head>
+<style type="text/css">
+    table, th , td  {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    table tr:nth-child(odd) {
+        background-color: #f1f1f1;
+    }
+    table tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    body {
+        background:url("{% static 'choujiang/4.png' %}") no-repeat 0px 0px;
+        background-size: cover;
+    }
+    table {
+        position: absolute;
+        left: 95px;
+        top: 380px;
+    }
+</style>
+
+<body>
+    <table >
+        <tr>
+            <th>姓名</th>
+            <th>英文名</th>
+            <th>工卡id</th>
+            <th>奖品级别</th>
+            <th>奖品内容</th>
+        </tr>
+        <tr>
+            {% for a in People_11 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>一等奖</th>
+            <th>Iphone X</th>
+        </tr>
+        <tr>
+            {% for a in People_21 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>二等奖</th>
+            <th>Switch</th>
+        </tr>
+        <tr>
+            {% for a in People_22 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>二等奖</th>
+            <th>Switch</th>
+        </tr>
+        <tr>
+            {% for a in People_23 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>二等奖</th>
+            <th>Switch</th>
+        </tr>
+        <tr>
+            {% for a in People_31 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>三等奖</th>
+            <th>Kindle</th>
+        </tr>
+        <tr>
+            {% for a in People_32 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>三等奖</th>
+            <th>Kindle</th>
+        </tr>
+        <tr>
+            {% for a in People_33 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>三等奖</th>
+            <th>Kindle</th>
+        </tr>
+        <tr>
+            {% for a in People_34 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>三等奖</th>
+            <th>Kindle</th>
+        </tr>
+        <tr>
+            {% for a in People_35 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>三等奖</th>
+            <th>Kindle</th>
+        </tr>
+        <tr>
+            {% for a in People_36 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>三等奖</th>
+            <th>Kindle</th>
+        </tr>
+    </table>
+</body>
+</html>

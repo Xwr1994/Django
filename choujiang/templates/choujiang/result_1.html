@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="backgroundstyle" href="{%  static 'choujiang/1_2.png' %}">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽取一等奖</title>
+</head>
+<style type="text/css">
+    table, th , td  {
+        border: 1px solid grey;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    table tr:nth-child(odd) {
+        background-color: #f1f1f1;
+    }
+    table tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+    body {
+        background:url("{% static 'choujiang/1_2.png' %}") no-repeat 0px 0px;
+        background-size: cover;
+    }
+    table {
+        position: absolute;
+        left: 95px;
+        top: 380px;
+    }
+</style>
+
+<body>
+    <table >
+        <tr>
+            <th>姓名</th>
+            <th>英文名</th>
+            <th>工卡id</th>
+            <th>奖品级别</th>
+            <th>奖品内容</th>
+        </tr>
+        <tr>
+            {% for a in People_1 %}
+                <th>{{ a }}</th>
+            {% endfor %}
+            <th>一等奖</th>
+            <th>Iphone X</th>
+        </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="backgroundstyle" href="{%  static 'choujiang/2_1.png' %}">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖2</title>
+
+    <style type="text/css">
+        /* 按钮样式 */
+        .button_1 {
+            background-color: #FF0000;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            position:absolute;
+            left:650px;
+            top:520px;
+        }
+
+        body {background:url("{% static 'choujiang/2_1.png' %}") no-repeat 0px 0px;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <a href="result/" id="button_choujiang1" class="button_1">点击开始抽奖</a>
+</body>
+</html>
